@@ -1,0 +1,70 @@
+@font-face{
+  font-family: 'Open Sans', sans-serif;
+  src: url(../fonts/opensans.woff);
+  src: url(../fonts/opensans.woff2);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'Open Sans', sans-serif;
+  src: url(../fonts/opensansbold.woff);
+  src: url(../fonts/opensansbold.woff2);
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', sans-serif;
+  .font-properties(15px, 400, 20px, #444444);
+}
+
+a {
+  text-decoration: none
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    -webkit-clip-path: inset(100%);
+
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@import "blocks/mixin.less";
+@import "blocks/button.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/page-main.less";
+@import "blocks/nice-things.less";
+@import "blocks/product-week.less";
+@import "blocks/about.less";
+@import "blocks/reviews.less";
+@import "blocks/contacts.less";
+@import "blocks/page-footer.less";
+@import "blocks/social.less";
+@import "blocks/copyright.less";
+@import "blocks/catalog.less";
+@import "blocks/production.less";
+@import "blocks/form.less";

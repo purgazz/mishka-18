@@ -4,33 +4,34 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Мишка логотип">
-    </a>
     <nav class="main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Мишка логотип">
+      </a>
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--catalog">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--catalog">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item site-list__item--order">
+          <li class="main-nav__item main-nav__item--order">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item site-list__item--search">
+          <li class="main-nav__item main-nav__item--search">
             <a href="seach.html">Поиск по сайту</a>
           </li>
-          <li class="site-list__item site-list__item--basket">
+          <li class="main-nav__item main-nav__item--basket">
             <a href="basket.html">Корзина: пока пуста</a>
           </li>
-          <li class="site-list__item site-list__item--new">
+          <li class="main-nav__item main-nav__item--new">
             <a href="new.html">Новые поступления</a>
           </li>
-          <li class="site-list__item site-list__item--sale">
+          <li class="main-nav__item main-nav__item--sale">
             <a href="sale.html">Распродажа</a>
           </li>
         </ul>
@@ -39,15 +40,15 @@
     </nav>
   </header>
 
-  <main class="main-page">
-    <h1 class="main-page__title">Каталог товаров</h1>
+  <main class="page-main">
+    <h1 class="page-main__title">Каталог товаров</h1>
 
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров</h2>
-      <ul class="catalog-list">
-        <li class="catalog-item">
+      <ul class="catalog__list">
+        <li class="catalog__item">
           <a class="catalog__link-picture" href="#">
-            <img class="catalog__image" src="http://placehold.it/150x100" alt="Фото Зайчик-попрыгайчик">
+            <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото Зайчик-попрыгайчик">
           </a>
           <div class="catalog__inner">
             <p class="catalog__title">
@@ -60,9 +61,9 @@
             </p>
           </div>
         </li>
-        <li class="catalog-item">
+        <li class="catalog__item">
           <a class="catalog__link-picture" href="#">
-            <img class="catalog__image" src="http://placehold.it/150x100" alt="Фото Корзинка для белья">
+            <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото Корзинка для белья">
           </a>
           <div class="catalog__inner">
             <p class="catalog__title">
@@ -75,9 +76,9 @@
             </p>
           </div>
         </li>
-        <li class="catalog-item">
+        <li class="catalog__item">
           <a class="catalog__link-picture" href="#">
-            <img class="catalog__image" src="http://placehold.it/150x100" alt="Фото Большая корзинка для игрушек">
+            <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото Большая корзинка для игрушек">
           </a>
           <div class="catalog__inner">
             <p class="catalog__title">
@@ -94,12 +95,16 @@
     </section>
 
     <section class="production">
-      <h2 class="production__title"></h2>
-      <div class="production__video">
-        <img class="production__image" src="http://placehold.it/150x100" alt="Видео производства">
+      <div class="production__inner">
+        <h2 class="production__title">Процесс производства</h2>
+        <div class="production__video">
+          <img class="production__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео производства">
+        </div>
+        <div class="production__text-block">
+          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="button production__button" href="#">Сделать заказ</a>
+        </div>
       </div>
-      <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="button production__button" href="#">Сделать заказ</a>
     </section>
 
   </main>
@@ -108,7 +113,7 @@
     <div class="page-footer__wrapper">
       <div class="page-header__logo">
         <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Мишка логотип">
+          <img class="page-header__logo-image" src="img/logo-footer.svg" alt="Мишка логотип">
         </a>
       </div>
       <div class="page-footer__social social">
@@ -127,7 +132,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
   </footer>
